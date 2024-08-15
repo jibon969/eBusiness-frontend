@@ -1,0 +1,75 @@
+/*================================================================================ 
+Author:Jayed Hossain Jibon 
+E-mail:jayes.swe@gmail.com, 
+Contact Me: 01987132107
+==================================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+html {
+    scroll-behavior: smooth;
+    color: #000;
+}
+  
+body {
+    /* font-family: 'Open Sans', Arial, Helvetica, sans-serif !important; */
+    /* font-family: 'Ubuntu','Hind Siliguri', Verdana, Geneva, Tahoma, sans-serif; */
+    background-color: #FFFFFF;
+    color: #000;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+  
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    text-align: justify;
+}
+
+.navbar-nav .nav-link {
+    color: black !important;
+}
+
+.jumbotron{
+    background: #222222 !important;
+    color:"#FFF";
+    border-radius: 0 !important;
+}
+
+.marginBottom{
+    margin-bottom: 100px;
+}
+
+/*---------------------
+    custom-button
+----------------------*/
+.custom-button {
+    color: white !important;
+    background: #343A40 !important;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.custom-button:hover {
+    color: #FFFFFF;
+    background-color: #000 !important;
+    padding: 10px;
+    border-radius: 5px;
+}
+

@@ -44,9 +44,6 @@ alt='Jayed Hossain Jibon'
 
 <hr/>
 
-#### 01. eBusiness
+<a href="https://jibon969.github.io/eBusiness-frontend/" target="_blank">Visit our website</a>
 
-```
-eBusiness web application
-```
 

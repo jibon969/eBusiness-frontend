@@ -128,7 +128,7 @@
 
     <main>
         
-        <section class = "hero container">
+        <section class = "hero-container">
         <div class="container">
         <div class="hero-text">
             <h1>Recognize, Target, and Treat</h1>
@@ -144,152 +144,278 @@
        </section>
 
 
-        <section class="product-section">
-            <div class="card text-center">
-                <div id="carouselInsideCard" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" alt="Product 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.cosrx.com/cdn/shop/files/SnailCream_2type_800x1067_7e00cd1b-6876-4ef4-9b25-7cedd3da359b_460x.jpg?v=1713173531" alt="Product 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.cosrx.com/cdn/shop/files/ac-collection-lightweight-soothing-moisturizer-cosrx-official-1_460x.jpg?v=1685603496" alt="Product 3">
-                        </div>
+<!-- Product Section -->
+<section class="product-section container mt-5">
+    <div class="row">
+        <!-- Product 1 with Carousel -->
+        <div class="col-md-3">
+            <div id="product1Carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 1">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInsideCard" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInsideCard" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_2_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_3_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 3">
+                    </div>
                 </div>
+                <!-- Controls for this specific carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#product1Carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#product1Carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+            <div class="card-body text-center">
+                <h6 class="card-title">Master Patch Intensive [90ea]</h6>
+                <p class="price">$25.00</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span> <span>4.9</span>
+                </div>
+                <button class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+        </div>
 
-            <div class="card text-center">
-                <div id="carouselInsideCard" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" alt="Product 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.cosrx.com/cdn/shop/files/SnailCream_2type_800x1067_7e00cd1b-6876-4ef4-9b25-7cedd3da359b_460x.jpg?v=1713173531" alt="Product 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.cosrx.com/cdn/shop/files/ac-collection-lightweight-soothing-moisturizer-cosrx-official-1_460x.jpg?v=1685603496" alt="Product 3">
-                        </div>
+        <!-- Product 2 with Carousel -->
+        <div class="col-md-3">
+            <div id="product1Carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 1">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInsideCard" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInsideCard" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_2_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_3_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 3">
+                    </div>
                 </div>
+                <!-- Controls for this specific carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#product2Carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#product2Carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+            <div class="card-body text-center">
+                <h6 class="card-title">Hydrium Green Tea Aqua Soothing Gel Cream</h6>
+                <p class="price">$25.00</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span> <span>4.7</span>
+                </div>
+                <button class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+        </div>
 
-            <div class="card text-center">
-                <div id="carouselInsideCard" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" alt="Product 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.cosrx.com/cdn/shop/files/SnailCream_2type_800x1067_7e00cd1b-6876-4ef4-9b25-7cedd3da359b_460x.jpg?v=1713173531" alt="Product 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.cosrx.com/cdn/shop/files/ac-collection-lightweight-soothing-moisturizer-cosrx-official-1_460x.jpg?v=1685603496" alt="Product 3">
-                        </div>
+        <!-- Additional products can follow the same pattern -->
+        <div class="col-md-3">
+            <div id="product1Carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 1">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInsideCard" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInsideCard" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_2_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_3_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 3">
+                    </div>
                 </div>
+                <!-- Controls for this specific carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#product2Carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#product2Carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+            <div class="card-body text-center">
+                <h6 class="card-title">Hydrium Green Tea Aqua Soothing Gel Cream</h6>
+                <p class="price">$25.00</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span> <span>4.7</span>
+                </div>
+                <button class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+        </div>
 
-            <div class="card text-center">
-                <div id="carouselInsideCard" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" alt="Product 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.cosrx.com/cdn/shop/files/SnailCream_2type_800x1067_7e00cd1b-6876-4ef4-9b25-7cedd3da359b_460x.jpg?v=1713173531" alt="Product 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.cosrx.com/cdn/shop/files/ac-collection-lightweight-soothing-moisturizer-cosrx-official-1_460x.jpg?v=1685603496" alt="Product 3">
-                        </div>
+        <div class="col-md-3">
+            <div id="product1Carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 1">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInsideCard" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInsideCard" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_2_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_3_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 3">
+                    </div>
                 </div>
+                <!-- Controls for this specific carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#product2Carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#product2Carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+            <div class="card-body text-center">
+                <h6 class="card-title">Hydrium Green Tea Aqua Soothing Gel Cream</h6>
+                <p class="price">$25.00</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span> <span>4.7</span>
+                </div>
+                <button class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+        </div>
 
-            <div class="card text-center">
-                <div id="carouselInsideCard" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" alt="Product 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.cosrx.com/cdn/shop/files/SnailCream_2type_800x1067_7e00cd1b-6876-4ef4-9b25-7cedd3da359b_460x.jpg?v=1713173531" alt="Product 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.cosrx.com/cdn/shop/files/ac-collection-lightweight-soothing-moisturizer-cosrx-official-1_460x.jpg?v=1685603496" alt="Product 3">
-                        </div>
+        <div class="col-md-3">
+            <div id="product1Carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 1">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInsideCard" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInsideCard" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_2_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_3_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 3">
+                    </div>
                 </div>
+                <!-- Controls for this specific carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#product2Carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#product2Carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+            <div class="card-body text-center">
+                <h6 class="card-title">Hydrium Green Tea Aqua Soothing Gel Cream</h6>
+                <p class="price">$25.00</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span> <span>4.7</span>
+                </div>
+                <button class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+        </div>
 
-            <div class="card text-center">
-                <div id="carouselInsideCard" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" alt="Product 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.cosrx.com/cdn/shop/files/SnailCream_2type_800x1067_7e00cd1b-6876-4ef4-9b25-7cedd3da359b_460x.jpg?v=1713173531" alt="Product 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.cosrx.com/cdn/shop/files/ac-collection-lightweight-soothing-moisturizer-cosrx-official-1_460x.jpg?v=1685603496" alt="Product 3">
-                        </div>
+        <div class="col-md-3">
+            <div id="product1Carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 1">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInsideCard" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInsideCard" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_2_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_3_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 3">
+                    </div>
                 </div>
+                <!-- Controls for this specific carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#product2Carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#product2Carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </section>
-    </main>
+            <div class="card-body text-center">
+                <h6 class="card-title">Hydrium Green Tea Aqua Soothing Gel Cream</h6>
+                <p class="price">$25.00</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span> <span>4.7</span>
+                </div>
+                <button class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="product1Carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_2_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_3_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 3">
+                    </div>
+                </div>
+                <!-- Controls for this specific carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#product2Carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#product2Carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="card-body text-center">
+                <h6 class="card-title">Hydrium Green Tea Aqua Soothing Gel Cream</h6>
+                <p class="price">$25.00</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span> <span>4.7</span>
+                </div>
+                <button class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="product1Carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_800x1067_8c2ed1af-579e-4861-9b4b-28ba19ea91e6_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_2_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.cosrx.com/cdn/shop/files/vitaminE_Sun_3_720x.jpg?v=1716971722" class="d-block w-100" alt="Product Image 3">
+                    </div>
+                </div>
+                <!-- Controls for this specific carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#product2Carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#product2Carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="card-body text-center">
+                <h6 class="card-title">Hydrium Green Tea Aqua Soothing Gel Cream</h6>
+                <p class="price">$25.00</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span> <span>4.7</span>
+                </div>
+                <button class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <section class="footer-section">
         <footer>
@@ -405,5 +531,13 @@
 
     <!-- Bootstrap JS with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        var carousels = document.querySelectorAll('.carousel');
+        carousels.forEach(function(carousel) {
+            var myCarousel = new bootstrap.Carousel(carousel, {
+                interval: false  // Disable auto-slide
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
+
 html {
     scroll-behavior: smooth;
     color: #000;
@@ -125,7 +130,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 .hero-container{
@@ -143,7 +148,7 @@ main {
 }
 
 .image-overlay {
-    position: absolute; /* Position it relative to the .hero.container */
+    position: absolute;
     right: 0; /* Align to the right */
     top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust for vertical centering */
@@ -152,10 +157,10 @@ main {
 }
 
 .image-overlay img {
-    width: 100%;
+    border-radius: 3px;
+    object-fit: cover; 
+    width:350px;
     height: auto;
-    border-radius: 10px;
-    object-fit: cover; /* Ensure the image fills the space without distortion */
 }
 
 
@@ -177,9 +182,7 @@ main {
     border-color: #F3D871;
 }
 
-* {
-    box-sizing: border-box;
-}
+
 
 .footer-section{
     background-color: #F7F7F8;

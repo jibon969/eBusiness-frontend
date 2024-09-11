@@ -182,6 +182,44 @@ main {
     border-color: #F3D871;
 }
 
+/*LOGIN*/
+  .login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-box {
+    width: 100%;
+    max-width: 380px;
+    padding: 30px;
+    background-color: #ffffff;
+  }
+  .form-label {
+    font-weight: 500;
+  }
+  .btn-dark {
+    background-color: #000;
+    border-color: #000;
+  }
+  .forgot-password {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+  }
+  .form-group {
+    position: relative;
+  }
+  .accountbtn {
+    color:#ff74ae;
+    float: right;
+  }
+  
+.forgot-password,
+.create-account {
+    font-size: 14px;
+  }
 
 
 .footer-section{

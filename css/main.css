@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #FFFFFF;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    background-color: #F8F8F8;
+    color: #000;
+}
+
+
+/*===================================================================================
+                Header section styles
+==============================================================================*/
+
+.navbar{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+
+.sticky-header {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.sticky-header {
+    transition: top 0.3s;
+}
+
+.fixed-top {
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+}
+
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-item a{
+    color: #000;
+}
+
+.nav-link{
+    font-size: 16px;
+    color: #000000 !important;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+}
+
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: #b44534f9;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    min-width: 150px;
+    z-index: 1001;
+}
+
+.nav-item:hover .dropdown-menu,
+.dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.nav-item:hover .dropdown-menu,
+.dropdown-menu:hover {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+}
+
+.dropdown-menu li a:hover {
+    color: #ff74ae;
+}
+
+
+/*===================================================================================
+        FREE SHIPPING
+==============================================================================*/
+
+.free-shipping{
+    background-color: aliceblue; 
+    padding: 5px;
+}
+
+.free-shipping-title{
+    text-align: center;
+    margin-top: 7px;
+}
+
+
+/*===================================================================================
+        FREE SHIPPING
+==============================================================================*/
+
+.banner-section{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.overlay-text p{
+    font-weight: 100;
+    font-size: larger;
+}
+
+
+.shop-now-button{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 20px;
+    border: 2px solid aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+
+}
+
+.shop-now-button:hover{
+    background-color: white;
+    color: black;
+    border:none;
+    border-radius: 5px;
+}
+
+/*===================================================================================
+            Home
+==============================================================================*/
+
+.main-section{
+    overflow: hidden;
+    display: block;
+}
+
+.product-title p{
+    margin-top: 10px;
+}
+
+.add-to-cart-btn{
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add-to-cart-btn:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+
+/*============================================================
+    Production section styles 
+==========================================================*/
+
+.product-section{
+    overflow: hidden;
+    display: block;
+}
+
+
+
+/*============================================================
+        LOGIN Section styles 
+==========================================================*/
+.login-container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-box {
+    width: 100%;
+    max-width: 380px;
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.btn-dark {
+    background-color: #040404;
+    border-color: #000;
+}
+
+.forgot-password {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+.forgot-password a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.form-group {
+    position: relative;
+}
+
+.create-account-btn {
+    float: right;
+}
+.create-account-btn a{
+    color: #000000;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.create-account-btn a:hover{
+    color: #000;
+}
+  
+.create-account {
+    font-size: 14px;
+}
+
+
+/*===================================================================================
+                Footer section styles
+==============================================================================*/
+
+.footer{
+    overflow: hidden;
+    display: block;
+    background-color: #F7F7F8;
+    color: #000;
+}
+
+.contact-us{
+    margin: 20px;
+}
+
+.contact-us h4{
+    font-weight: bold;
+}
+
+
+.social{
+    overflow: hidden;
+    display: block;
+}
+
+
+.social a {
+    font-size: 14px;
+    color: #000000 !important;
+    text-decoration: none;
+    margin-right: 4px;
+    position: relative;
+}
+
+.fa-facebook-f, 
+.fa-twitter,
+.fa-instagram,
+.fa-linkedin-in
+
+{
+    font-size: 14px;
+    padding: 8px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.fa-facebook-f:hover{
+    font-size: 14px;
+    padding: 8px;
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.fa-twitter:hover{
+    font-size: 14px;
+    padding: 8px;
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.fa-instagram:hover{
+    font-size: 14px;
+    padding: 8px;
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+
+.fa-linkedin-in:hover{
+    font-size: 14px;
+    padding: 8px;
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.social ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+    margin: 0;
+}
+.social li {
+    display: inline;
+}
+
+/* help */
+.help{
+    margin: 20px;
+}
+
+.help h4{
+    font-weight: bold;
+}
+
+/* shop */
+.shop{
+    margin: 20px;
+}
+
+.shop h4{
+    font-weight: bold;
+}
+
+/* newsletter */
+.newsletter{
+    margin: 20px;
+}
+.newsletter h4{
+    font-weight: bold;
+}
+
+.newsletter-btn {
+    background-color: #000;
+    color: #FFFFFF;
+    padding: 10px;
+    min-width: 150px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.newsletter-btn:hover {
+    background-color: #F3D871;
+    color: #000;
+    border-color: #F3D871;
+}

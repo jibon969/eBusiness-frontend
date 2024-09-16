@@ -1,6 +1,6 @@
 
 <img
-src='img/header.jpg'
+src='img/icon/header.jpg'
 alt='Jayed Hossain Jibon'
 />
 <h1 align="center" id='header'>eBusiness</h1>

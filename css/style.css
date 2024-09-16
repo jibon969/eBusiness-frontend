@@ -1,17 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
-
-* {
-    box-sizing: border-box;
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-
-html {
-    scroll-behavior: smooth;
-    color: #000;
-}
 
 body {
     background-color: #FFFFFF;
@@ -25,55 +18,61 @@ body {
 
 a{
     text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    background-color: #F8F8F8;
+    color: #000;
 }
 
 
-/*==================================================
-                Header section
- =================================================*/
+/*===================================================================================
+    1. Header section styles
+==============================================================================*/
 
-header {
-    background-color: #f0f0f0;
+.navbar{
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
-nav {
-    position: fixed;
+
+.sticky-header {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
     top: 0;
+    z-index: 1000;
+}
+
+
+.sticky-header {
+    transition: top 0.3s;
+}
+
+.fixed-top {
+    top: 0;
+    z-index: 1000;
+    position: fixed;
     width: 100%;
-}
-
-.navbar-nav {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding-left: 20px;
-    text-align: center;
-}
-
-
-
-.navbar-brand {
-    padding: 5px 10px;
 }
 
 
 .nav-item {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
+.nav-item a{
+    color: #000;
+}
 
 .nav-link{
-    font-size: 14px;
-    color: #333;
+    font-size: 16px;
+    color: #000000 !important;
     text-decoration: none;
     padding: 5px 10px;
     position: relative;
 }
 
-/* .nav-link:hover, a:hover {
-    color: #DF5641;
-} */
 
 .nav-link::after {
     content: '';
@@ -94,11 +93,10 @@ nav {
 .dropdown-menu {
     background-color: #f8f9fa;
     border-bottom: 1px solid #ddd;
-    z-index: 1000;
-    display: block; /* Keep it block to control visibility and opacity */
-    visibility: hidden; /* Initially hidden */
-    opacity: 0; /* Fully transparent */
-    transition: visibility 0s linear 0.5s, opacity 0.5s linear; /* 0.5s delay on hiding */
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
     position: absolute;
     top: 100%;
     left: 0;
@@ -111,9 +109,9 @@ nav {
 
 .nav-item:hover .dropdown-menu,
 .dropdown-menu.show {
-    visibility: visible; /* Make it visible */
-    opacity: 1; /* Fully opaque */
-    transition-delay: 0s; /* No delay when showing */
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
 }
 
 .nav-item:hover .dropdown-menu,
@@ -131,103 +129,28 @@ nav {
     color: #ff74ae;
 }
 
+
 /*===================================================================================
-                    Home page
+    2. FREE SHIPPING
 ==============================================================================*/
 
-.main-section {
+.free-shipping{
+    background-color: aliceblue; 
+    padding: 5px;
+}
+
+.free-shipping-title{
     text-align: center;
-    padding: 40px;
-}
-
-.banner {
-    position: relative;
-}
-.img-fluid {
-    width: 100%;
-    height: auto;
-}
-.overlay-text {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: black;
-    font-weight: bold;
-}
-
-.overlay-text p{
-    font-weight: 100;
-    font-size: larger;
+    margin-top: 7px;
 }
 
 
-.shop-now-button{
-    background-color: black;
-    color: aliceblue;
-    padding: 10px 20px;
-    border: 2px solid aliceblue;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    border-radius: 5px;
-
-}
-
-.shopbtn{
-    color:#ffffff;
-}
-
-.shopbtn:hover{
-    color:#000;
-}
-
-.shop-now-button:hover{
-    background-color: white;
-    color: black;
-    border:none;
-    border-radius: 5px;
-}
-
-
-.hero-container{
-    padding-bottom: 20px;
-}
-
-.hero-text {
-    width: 50%;
-}
-
-.product-section {
-    clear: both;
-    position: relative;
-    z-index: 10;
-}
-
-
-
-.custom-btn, .custom-button {
-    background-color: #000;
-    color: #FFFFFF;
-    padding: 6px;
-    margin-bottom: 6px;
-    min-width: 150px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.custom-btn:hover, .custom-button:hover {
-    background-color: #F3D871;
-    color: #000;
-    border-color: #F3D871;
-}
 
 /*============================================================
-        LOGIN Section styles 
+    3. LOGIN Section styles 
 ==========================================================*/
 .login-container {
-    height: 80vh;
+    height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,29 +164,24 @@ nav {
     background-color: #ffffff;
 }
 
-.form-label {
-    font-weight: 500;
+.signIn-btn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    padding: 12px;
+    color: #FFFFFF;
+    min-width: 120px;
+    font-size: 20px;
 }
 
-.btn-dark {
-    background-color: #040404;
-    border-color: #000;
-}
-
-.forgot-password {
-    font-size: 12px;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-}
-
-.forgot-password a{
-    color: #000000;
-    text-decoration: none;
-}
-
-.form-group {
-    position: relative;
+.signIn-btn:hover{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #F3D871;
+    padding: 12px;
+    color: #000;
+    min-width: 120px;
+    font-size: 20px;
 }
 
 .create-account-btn {
@@ -283,63 +201,273 @@ nav {
     font-size: 14px;
 }
 
-
-/*===================================================================================
-                    Details Page styles
-==============================================================================*/
-.product-description h3{
-    font-weight: 700;
+/*============================================================
+    4.  SignUp Section styles 
+==========================================================*/
+.sign-up-section{
+    overflow: hidden;
+    display: block;
 }
 
-.points-section{
-    background-color: #ffffa1e1; 
-    border: 1px solid #ddd;
+.signUp-container {
+    margin-top: 100px;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+
+}
+.signUp-box {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    background-color: #ffffff;
 }
 
-.AddtoCartbtn{
-    margin-bottom: 15px;
-}
-
-/* Remove default accordion arrow for Option Details and Proven Results */
-#optionDetailsButton::after, 
-#provenResultsButton::after {
-    display: none;
-}
-
-/* Custom icon styling for Option Details and Proven Results */
-.icon-plus-minus {
-    font-size: 1.2rem;
-    margin-left: auto;
-    transition: transform 0.3s ease-in-out;
-}
-
-.accordion-button:not(.collapsed) .icon-plus-minus {
-    transform: rotate(45deg);
-}
-
-.accordion-button.collapsed .icon-plus-minus {
-    transform: rotate(0deg);
-}
-
-/* Remove background color and add a border line for Option Details and Proven Results */
-#optionDetailsButton,
-#provenResultsButton {
-    background-color: transparent !important;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    border: none;
-}
-/*===================================================================================
-                    footer section styles
-==============================================================================*/
-
-.footer-section{
-    background-color: #F7F7F8;
+.create-btn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #000000;
     padding: 10px;
+    color: #FFFFFF;
+    min-width: 110px;
+    font-size: 20px;
+}
+.create-btn:hover{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #F3D871;
+    padding: 10px;
+    color: #000;
+    min-width: 110px;
+    font-size: 20px;
+}
+.login-text{
+    font-size: 18px;
 }
 
-.newsletter, .contact-us, .shop, .help{
+.login-text:hover{
+    font-size: 18px;
+    color: #F7F7F8;
+}
+
+/*============================================================
+    5. Cart Section styles 
+==========================================================*/
+.cart-section{
+    overflow: hidden;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.table-td{
+    font-size: 20px;
+}
+
+.img-wrap img{
+    width: 100%;
+    height: 80px;
+}
+
+.cart-shopping-btn {
+    color: white !important;
+    background: #E04F54 !important;
+    margin-bottom: 10px !important;
+}
+
+.cart-checkout-btn {
+    color: #FFFFFF;
+    background: #000;
+    border-radius: 4px;
+}
+.cart-checkout-btn:hover{
+    background-color: #F3D871;
+    color: #000;
+    border-color: #F3D871;
+}
+
+/*============================================================
+    6. Checkout Section styles 
+==========================================================*/
+.checkout-section {
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
+
+.checkout-total {
+    color: white !important;
+    background: #000 !important;
+    border-radius: 10px !important;
+}
+
+
+/*============================================================
+  7.  Order Complete styles 
+==========================================================*/
+.order-complete {
+    margin-top: 4rem;
+    margin-bottom: 14rem;
+}
+
+.invoice-btn{
+    color: #FFFFFF;
+    background: #000000 ;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.invoice-btn:hover{
+    color: #000;
+    background: #F3D871 ;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+
+/*===================================================================================
+  8.  Home Style CSS
+==============================================================================*/
+
+.banner-section{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.overlay-text p{
+    font-weight: 100;
+    font-size: larger;
+}
+
+
+.shop-now-button{
+    margin-top: 7px;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 12px;
+    border: 2px solid #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+
+}
+
+.shop-now-button:hover{
+    background-color: #FFFFFF;
+    color: #000;
+    padding: 12px;
+    border: 2px solid #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+
+/* multi-benefit-solution */
+.multi-benefit-solution{
+    overflow: hidden;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.multi-benefit-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-title p{
+    margin-top: 10px;
+}
+
+.add-to-cart-btn{
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add-to-cart-btn:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+/*============================================================
+   9.  Production section styles 
+==========================================================*/
+
+.product-section{
+    overflow: hidden;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.product-list-title{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*============================================================
+    10. Product Details Section styles 
+==========================================================*/
+.product-details{
+    overflow: hidden;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.img-detail img{
+    max-width: 100%;
+    height: 630px;
+    display: block; 
+}
+
+
+
+/*===================================================================================
+                Footer section styles
+==============================================================================*/
+
+.footer{
+    overflow: hidden;
+    display: block;
+    background-color: #F7F7F8;
+    color: #000;
+}
+
+.contact-us{
     margin: 20px;
+}
+
+.contact-us h4{
+    font-weight: bold;
 }
 
 
@@ -353,8 +481,54 @@ nav {
     font-size: 14px;
     color: #000000 !important;
     text-decoration: none;
-    padding: 5px;
+    margin-right: 4px;
     position: relative;
+}
+
+.fa-facebook-f, 
+.fa-twitter,
+.fa-instagram,
+.fa-linkedin-in
+
+{
+    font-size: 14px;
+    padding: 8px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.fa-facebook-f:hover{
+    font-size: 14px;
+    padding: 8px;
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.fa-twitter:hover{
+    font-size: 14px;
+    padding: 8px;
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.fa-instagram:hover{
+    font-size: 14px;
+    padding: 8px;
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+
+.fa-linkedin-in:hover{
+    font-size: 14px;
+    padding: 8px;
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 4px;
 }
 
 .social ul {
@@ -363,16 +537,48 @@ nav {
     margin: 0;
 }
 .social li {
-    display: inline; /* Makes list items inline */
-    margin-right: 1px; /* Adds spacing between items */
+    display: inline;
 }
 
-.shop-link a{
-    text-decoration: none;
-    color: #000000;
+/* help */
+.help{
+    margin: 20px;
 }
 
-.shop-link a:hover{
-    color: #ff74ae;
+.help h4{
+    font-weight: bold;
 }
 
+/* shop */
+.shop{
+    margin: 20px;
+}
+
+.shop h4{
+    font-weight: bold;
+}
+
+/* newsletter */
+.newsletter{
+    margin: 20px;
+}
+.newsletter h4{
+    font-weight: bold;
+}
+
+.newsletter-btn {
+    background-color: #000;
+    color: #FFFFFF;
+    padding: 10px;
+    min-width: 150px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.newsletter-btn:hover {
+    background-color: #F3D871;
+    color: #000;
+    border-color: #F3D871;
+}

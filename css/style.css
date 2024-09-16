@@ -26,6 +26,25 @@ a:hover{
     color: #000;
 }
 
+.custom-button{
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.custom-button:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
 
 /*===================================================================================
     1. Header section styles
@@ -57,7 +76,7 @@ a:hover{
 }
 
 
-.nav-item {
+/* .nav-item {
     margin-right: 10px;
 }
 
@@ -127,7 +146,7 @@ a:hover{
 
 .dropdown-menu li a:hover {
     color: #ff74ae;
-}
+} */
 
 
 /*===================================================================================
@@ -449,6 +468,19 @@ a:hover{
     display: block; 
 }
 
+/*===================================================================================
+    400, 403, 500 section styles
+==============================================================================*/
+
+.bad-request,
+.permission-denied,
+.page-not-found,
+.server-error{
+    overflow: hidden;
+    display: block;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
 
 
 /*===================================================================================

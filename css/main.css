@@ -135,13 +135,14 @@ a:hover{
 ==============================================================================*/
 
 .free-shipping{
-    background-color: aliceblue; 
-    padding: 5px;
+    background-color: rgb(0, 0, 0); 
+    padding: 1px;
 }
 
 .free-shipping-title{
     text-align: center;
-    margin-top: 7px;
+    margin-top: 5px;
+    color: #F7F7F8;
 }
 
 
@@ -334,6 +335,7 @@ a:hover{
     max-width: 380px;
     margin: 10px;
     background-color: #ffffff;
+    background: none;
 }
 
 .form-label {
@@ -377,6 +379,7 @@ a:hover{
 .create-account {
     font-size: 14px;
 }
+
 
 
 /*===================================================================================

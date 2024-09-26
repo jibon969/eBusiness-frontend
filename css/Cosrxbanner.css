@@ -107,7 +107,6 @@
         top: 40%; 
         width: 100px;
         height: 150px;
-        z-index: 6/* Ensuring the slider has a lower z-index */
     }
 
     .banner .slider .item {
@@ -115,6 +114,5 @@
     }
     .banner .content h1 {
         font-size: 6vw;
-        z-index: 6 /* Ensuring h1 has a higher z-index on mobile */
     }
 }

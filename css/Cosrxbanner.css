@@ -139,6 +139,11 @@
     .banner .slider {
         width: 100px;
         height: 150px;
+        top: 45%;
+    }
+    
+    .content{
+        top:27%;
     }
 
     .banner .slider .item {

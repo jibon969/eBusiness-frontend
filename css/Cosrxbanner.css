@@ -1,12 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
 @import url('https://fonts.cdnfonts.com/css/poppins');
 
-.body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
-}
 
 .card-banner-section {
     margin: 0; /* Remove any margin that might cause spacing */
@@ -24,7 +18,9 @@
     flex-direction: column;
     text-align: center;
     z-index: 5;
+    background-color: rgba(173, 202, 255, 0.525);
 }
+
 
 .banner .slider {
     position: absolute;
@@ -34,9 +30,10 @@
     left: 50%;
     transform: translate(-50%, -50%) perspective(1000px);
     transform-style: preserve-3d;
-    animation: autoRun 5s linear infinite;
+    animation: autoRun 15s linear infinite;
     z-index: 5;
 }
+
 
 @keyframes autoRun {
     from {
@@ -46,6 +43,27 @@
         transform: translate(-50%, -50%) perspective(1000px) rotateX(-16deg) rotateY(360deg);
     }
 }
+
+@keyframes animate3D {
+    0% {
+        transform: perspective(600px) rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50% {
+        transform: perspective(600px) rotateX(10deg) rotateY(180deg) rotateZ(0deg); /* Full rotation */
+    }
+    100% {
+        transform: perspective(600px) rotateX(10deg) rotateY(360deg) rotateZ(0deg); /* Return to start */
+    }
+}
+
+
+
+.item img{
+    box-shadow:0 0 10px rgba(28, 15, 10, 0.8), /* White inner glow */
+    0 0 10px rgba(63, 108, 255, 0.6), /* Larger white glow */
+    0 0 20px rgba(25, 17, 255, 0.881);
+}
+
 
 .banner .slider .item {
     position: absolute;
@@ -67,6 +85,17 @@
     z-index: 2;
 }
 
+
+@keyframes fadeOutH1 {
+    0%, 20%, 100% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0; /* h1 disappears around the middle of the rotation */
+    }
+}
+
+
 .banner .content h1 {
     font-family: 'ICA Rubrik';
     font-size: 10vw;
@@ -75,9 +104,15 @@
     text-align: center;
     position: relative;
     margin: 0;
-    text-shadow: 0 0 10px rgba(223, 160, 160, 0.8), /* White inner glow */
-    0 0 20px rgba(255, 255, 255, 0.6), /* Larger white glow */
-    0 0 30px rgba(255, 255, 255, 0.881);
+    text-shadow: 0 0 10px rgba(124, 150, 255, 0.8), 
+    0 0 20px rgba(131, 70, 255, 0.6), 
+    0 0 30px rgba(255, 255, 255, 0.881),
+    5px 5px 10px rgba(0, 0, 0, 0.5); /* Additional shadows for depth */
+
+    transform: perspective(600px) rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+    transform-style: preserve-3d;
+    animation: animate3D 15s linear infinite; /* 3D animation for movement */
+    
 }
 
 .banner .content h1::after {
@@ -155,22 +190,61 @@
     }
 }
 
-/*
-
-
-@media screen and (max-width: 1023px) {
-    .banner .slider {
-        width: 160px;
-        height: 200px;
-    }
-    .banner .slider .item {
-        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
-    }
-    .banner .content h1 {
-        font-size: 7vw;
-    }
+.banner-bottom{
+    background-color: bisque;
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
- 
+/*===============================
+    Home > information
+=================================*/
 
+.best-selling-title{
+    text-align: center;
+    /* text-shadow: 0 0 10px rgba(223, 160, 160, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.881); */
+    font-family: 'ICA Rubrik';
+    font-size: 40px;
+    background-color: black;
+    color: #FFF;
+    padding: 10px;
+}
+
+.information-wrap {
+    background-color: black !important; 
+    color: #FFF;
+    
+}
+
+.information-wrap:hover {
+    background-color: #FFF;
+}
+
+.information-list {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 25px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+    .information-list {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent line breaks */
+        padding-bottom: 20px; /* Add some padding at the bottom to ensure space for scrollbar */
+    }
+
+    .information-list li {
+        display: inline-block; /* Display list items inline */
+        vertical-align: top; /* Align items to the top */
+        white-space: normal; /* Reset white-space property */
+        margin-right: 10px; /* Add margin between list items */
+    }
+}

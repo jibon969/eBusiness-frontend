@@ -21,10 +21,14 @@ a{
     color: #000;
 }
 
-a:hover{
+p{
+    text-align: justify !important;
+}
+
+/* a:hover{
     background-color: #F8F8F8;
     color: #000;
-}
+} */
 
 .custom-button{
     color: #000;
@@ -39,7 +43,7 @@ a:hover{
 
 .custom-button:hover{
     background-color: #000000;
-    color: #f5f5f5;
+    color: #FFFFFF;
     padding: 10px 20px;
     transition: all 0.5s ease-in-out;
     border-radius: 5px;
@@ -76,79 +80,37 @@ a:hover{
     position: fixed;
     width: 100%;
 }
+/* .main-title{
+    font-family: 'ICA Rubrik';
+    font-size: 30px;
+    margin-left: 10px;
+} */
 
 
-/* .nav-item {
-    margin-right: 10px;
+.main-title{
+    font-family: 'ICA Rubrik';
+    font-size: 27px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+.nav-item a {
+    font-family: 'ICA Rubrik';
+    font-size: 17px;
+    color: #000000 !important;
+}
+/* .nav-item a {
+    font-family: 'ICA Rubrik';
+    font-size: 20px;
 }
 
-.nav-item a{
-    color: #000;
+.nav-item a:hover{
+    background-color: #FFFFFF;
+    border-radius: 10px;
 }
 
 .nav-link{
-    font-size: 16px;
-    color: #000000 !important;
-    text-decoration: none;
-    padding: 5px 10px;
-    position: relative;
+    color: #000 !important;
 }
-
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 50%;
-    background-color: #b44534f9;
-    transition: width 0.3s ease, left 0.3s ease;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-    left: 0;
-}
-
-.dropdown-menu {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #ddd;
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 8px;
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    min-width: 150px;
-    z-index: 1001;
-}
-
-.nav-item:hover .dropdown-menu,
-.dropdown-menu.show {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0s;
-}
-
-.nav-item:hover .dropdown-menu,
-.dropdown-menu:hover {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0s;
-}
-
-.dropdown-menu li {
-    padding: 8px 16px;
-}
-
-.dropdown-menu li a:hover {
-    color: #ff74ae;
-} */
 
 
 /*===================================================================================
@@ -156,14 +118,13 @@ a:hover{
 ==============================================================================*/
 
 .free-shipping{
-    background-color: rgb(0, 0, 0); 
-    padding: 3px;
+    background-color: aliceblue; 
+    padding: 5px;
 }
 
 .free-shipping-title{
     text-align: center;
-    margin-top: 5px;
-    color: #F7F7F8;
+    margin-top: 7px;
 }
 
 
@@ -172,7 +133,6 @@ a:hover{
     3. LOGIN Section styles 
 ==========================================================*/
 .login-container {
-    padding-top: 20px;
     height: 45vh;
     display: flex;
     justify-content: center;
@@ -185,7 +145,6 @@ a:hover{
     max-width: 380px;
     margin: 10px;
     background-color: #ffffff;
-    background: none;
 }
 
 .signIn-btn{
@@ -225,7 +184,6 @@ a:hover{
     font-size: 14px;
 }
 
-
 /*============================================================
     4.  SignUp Section styles 
 ==========================================================*/
@@ -235,7 +193,6 @@ a:hover{
 }
 
 .signUp-container {
-    padding-top: 20px;
     margin-top: 100px;
     height: 45vh;
     display: flex;
@@ -358,59 +315,12 @@ a:hover{
   8.  Home Style CSS
 ==============================================================================*/
 
-.banner-section{
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.img-fluid {
-    width: 100%;
-    height: auto;
-}
-.overlay-text {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: black;
-    font-weight: bold;
-}
-
-.overlay-text p{
-    font-weight: 100;
-    font-size: larger;
-}
-
-
-.shop-now-button{
-    margin-top: 7px;
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 12px;
-    border: 2px solid #FFFFFF;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    border-radius: 5px;
-
-}
-
-.shop-now-button:hover{
-    background-color: #FFFFFF;
-    color: #000;
-    padding: 12px;
-    border: 2px solid #FFFFFF;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    border-radius: 5px;
-}
-
-
 /* multi-benefit-solution */
 .multi-benefit-solution{
     overflow: hidden;
     display: block;
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .multi-benefit-title{
@@ -459,6 +369,8 @@ a:hover{
     margin-bottom: 10px;
 }
 
+
+
 /*============================================================
     10. Product Details Section styles 
 ==========================================================*/
@@ -469,10 +381,23 @@ a:hover{
     margin-bottom: 40px;
 }
 
-.img-detail img{
-    max-width: 100%;
-    height: 630px;
-    display: block; 
+.img-big-wrap img{
+    width: 100%; 
+    height: 614px;
+}
+
+.item-gallery img{
+    width: 80px; 
+    height:80px
+}
+
+.you-also-like{
+    margin-bottom: 150px;
+}
+
+.customer-reviews{
+    margin-top: 130px;
+    text-align: center;
 }
 
 /*===================================================================================
@@ -489,45 +414,33 @@ a:hover{
     margin-bottom: 5rem;
 }
 
-
-
 /*===================================================================================
-                FAQ section styles
+    Search Page section styles
 ==============================================================================*/
-.accordion-button {
-    font-size: 18px;
-    background-color: #fff;
-    color: #333;
-    border: none;
-}
-
-.accordion-button:not(.collapsed) {
-    color: #333;
-    background-color: #fff;
-    box-shadow: none;
-}
-
-.accordion-button::after {
-    filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(93%) contrast(88%);
-}
-
-.accordion-body {
-    font-size: 16px;
-    color: #000000;
-}
-
-.accordion-body strong {
-    color: #000000;
+.search-section{
+    overflow: hidden;
     display: block;
-    margin-bottom: 0.5rem;
 }
 
-.accordion-item {
-    border-bottom: 1px solid #b5b5b5;
+.search-form{
+    height: 50px;
+    border-radius: 16px;
 }
 
-.accordion-item:last-child {
-    border-bottom: 1;
+.search-btn {
+    height: 50px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: grey;
+    border-color: grey;
+}
+
+.no-result-found{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
 }
 
 
@@ -662,4 +575,10 @@ a:hover{
     background-color: #F3D871;
     color: #000;
     border-color: #F3D871;
+}
+
+/*Review Section Added Styles*/
+.start i{
+    font-size: 15px;
+
 }

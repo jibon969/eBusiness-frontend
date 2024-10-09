@@ -3,7 +3,7 @@
 
 
 .card-banner-section {
-    margin: 0; /* Remove any margin that might cause spacing */
+    margin: 0; 
     padding: 0;
 }
 
@@ -18,7 +18,7 @@
     flex-direction: column;
     text-align: center;
     z-index: 5;
-    background-color: rgba(173, 202, 255, 0.525);
+    background-color: #FAEEE9; ;
 }
 
 
@@ -49,19 +49,20 @@
         transform: perspective(600px) rotateX(10deg) rotateY(0deg) rotateZ(0deg);
     }
     50% {
-        transform: perspective(600px) rotateX(10deg) rotateY(180deg) rotateZ(0deg); /* Full rotation */
+        transform: perspective(600px) rotateX(10deg) rotateY(360deg) rotateZ(0deg); 
     }
     100% {
-        transform: perspective(600px) rotateX(10deg) rotateY(360deg) rotateZ(0deg); /* Return to start */
+        transform: perspective(600px) rotateX(10deg) rotateY(360deg) rotateZ(0deg); 
     }
 }
 
 
 
 .item img{
-    box-shadow:0 0 10px rgba(28, 15, 10, 0.8), /* White inner glow */
-    0 0 10px rgba(63, 108, 255, 0.6), /* Larger white glow */
-    0 0 20px rgba(25, 17, 255, 0.881);
+    box-shadow:0 0 10px #735366 , 
+    0 0 10px rgb(252, 210, 252), 
+    0 0 20px rgba(255, 200, 230, 0.881);
+    border-radius: 20px;
 }
 
 
@@ -91,27 +92,26 @@
         opacity: 1;
     }
     80% {
-        opacity: 0; /* h1 disappears around the middle of the rotation */
+        opacity: 0; 
     }
 }
 
 
 .banner .content h1 {
     font-family: 'ICA Rubrik';
-    font-size: 10vw;
+    font-size: 12vw;
     line-height: 1em;
-    color: #25283B;
+    color: black;
     text-align: center;
     position: relative;
     margin: 0;
-    text-shadow: 0 0 10px rgba(124, 150, 255, 0.8), 
-    0 0 20px rgba(131, 70, 255, 0.6), 
+    text-shadow: 0 0 10px rgba(255, 190, 255, 0.8), 
+    0 0 20px rgba(254, 179, 255, 0.6), 
     0 0 30px rgba(255, 255, 255, 0.881),
-    5px 5px 10px rgba(0, 0, 0, 0.5); /* Additional shadows for depth */
-
+    5px 5px 10px rgba(0, 0, 0, 0.5);
     transform: perspective(600px) rotateX(10deg) rotateY(10deg) rotateZ(0deg);
     transform-style: preserve-3d;
-    animation: animate3D 15s linear infinite; /* 3D animation for movement */
+    animation: animate3D 15s linear infinite; 
     
 }
 

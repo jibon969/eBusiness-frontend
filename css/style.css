@@ -362,8 +362,8 @@ h3{
     transition: transform 0.3s ease-in-out;
 }
 
-.product-content:hover img{
-    transform: scale(1.00); 
+.product-content img:hover{
+    transform: scale(1.05); 
 }
 
 .add-to-cart-btn{

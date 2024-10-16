@@ -88,15 +88,8 @@ h3{
     transition: top 0.3s;
 }
 
-/* .main-title{
-    font-family: 'ICA Rubrik';
-    font-size: 30px;
-    margin-left: 10px;
-} */
-
-
 .main-title {
-    font-family: 'Belleza';
+    font-family: 'Belleza' !important;
     font-size: 27px;
     margin-left: 10px;
     font-weight: 900;
@@ -104,7 +97,7 @@ h3{
 }
 
 .nav-item a {
-    font-family: 'Poppins';
+    font-family: 'Poppins' !important;
     font-size: 17px;
     color: #735366 !important; 
     padding: 10px 15px;
@@ -115,6 +108,11 @@ h3{
     color: #FAEEE9 !important;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+.nav-link{
+    font-family: 'Poppins' !important;
 }
 
 /* .nav-item a {
@@ -163,7 +161,6 @@ h3{
     width: 100%;
     max-width: 380px;
     margin: 10px;
-    background-color: #ffffff;
 }
 
 .signIn-btn{
@@ -212,7 +209,7 @@ h3{
 }
 
 .signUp-container {
-    margin-top: 100px;
+    margin-top: 120px;
     height: 45vh;
     display: flex;
     justify-content: center;
@@ -224,7 +221,6 @@ h3{
     width: 100%;
     max-width: 400px;
     margin: 10px;
-    background-color: #ffffff;
 }
 
 .create-btn{
